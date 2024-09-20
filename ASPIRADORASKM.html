@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASPIRADORASKM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Slab+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Slab Serif', serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/564x/75/c5/ed/75c5ed683c5b23224e729fa261c32d5a.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000000; /* Cambiado a negro */
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav button {
+            background-color: #59b41a;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1.1em;
+        }
+        nav button:hover {
+            background-color: #2379da;
+        }
+        .logo {
+            animation: fadeIn 1s;
+            width: 250px; /* Tamaño del logo */
+            border-radius: 50%; /* Circular */
+            margin: 0 auto;
+            display: block;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .img-medium {
+            width: 50%; /* Ajustado a tu preferencia */
+            height: auto;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .contact-info img {
+            margin-right: 10px;
+            width: 20px; /* Tamaño del ícono */
+            height: 20px; /* Tamaño del ícono */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://i.ibb.co/H7GNNbx/ASPIRADORASKM.jpg" alt="Logo ASPIRADORASKM">
+        <nav>
+            <button onclick="document.getElementById('mision-vision').scrollIntoView();">Misión y Visión</button>
+            <button onclick="document.getElementById('acerca').scrollIntoView();">Acerca de Mí</button>
+            <button onclick="document.getElementById('comprar').scrollIntoView();">Comprar</button>
+            <button onclick="document.getElementById('mas-info').scrollIntoView();">Más Información</button>
+            <button onclick="document.getElementById('contacto').scrollIntoView();">Contacto</button>
+        </nav>
+    </header>
+
+    <section id="mision-vision">
+        <h2>Misión y Visión</h2>
+        <p><strong>Misión:</strong> Aspiradoras KM es una empresa comprometida con el medio ambiente, busca mejorar la calidad de vida de las personas y la sostenibilidad ambiental con el uso de una aspiradora elaborada con elementos reciclables.</p>
+        <p><strong>Visión:</strong> Para el año 2025, Aspiradoras KM busca ser reconocida a nivel nacional como una de las mejores empresas por su compromiso ambiental y su excelente calidad y diseño ecológico.</p>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de Mí</h2>
+        <img class="img-medium" src="https://i.ibb.co/Wckvwk5/Whats-App-Image-2024-09-19-at-8-41-52-PM.jpg" alt="Kevin Andrés Martínez Monterroza">
+        <p><strong>Nombre:</strong> Kevin Andrés Martínez Monterroza</p>
+        <p><strong>Cargo:</strong> Gerente y Subgerente</p>
+        <p>Como el único miembro de la empresa, me dedico a crear aspiradoras ecológicas, comprometido con el medio ambiente y la sostenibilidad.</p>
+    </section>
+
+    <section id="comprar">
+        <h2>Comprar</h2>
+        <h3>Aspiradora Ecológica KM</h3>
+        <img class="img-medium" src="https://campervaning.es/wp-content/uploads/2024/02/que-es-una-aspiradora-casera.jpg" alt="Aspiradora Ecológica">
+        <p><strong>Precio:</strong> $120.000 COP</p>
+        <p>Esta aspiradora ecológica está fabricada con materiales reciclables y es amigable con el medio ambiente.</p>
+        <button onclick="alert('Redirigiendo a medios de pago...');">Comprar</button>
+    </section>
+
+    <section id="mas-info">
+        <h2>Más Información</h2>
+        <p><strong>Problemática:</strong> Las aspiradoras son esenciales para el mantenimiento del hogar, pero muchas generan contaminación ambiental y auditiva debido a sus materiales.</p>
+        <p><strong>Objetivo:</strong> Beneficiar el medio ambiente mediante la fabricación de una aspiradora construida con materiales ecológicos.</p>
+        <p><strong>Objetivos específicos:</strong></p>
+        <ul>
+            <li>Mitigar el impacto ambiental utilizando materiales reciclables.</li>
+            <li>Demostrar cómo puede funcionar una aspiradora con batería o pila.</li>
+            <li>Crear un electrodoméstico que consuma menos energía.</li>
+            <li>Reducir el ruido producido por las aspiradoras convencionales.</li>
+        </ul>
+    </section>
+
+    <!-- Eslogan -->
+    <div style="text-align: center; margin: 40px 0;">
+        <h1 style="font-family: 'Slab Serif', serif; font-size: 2.5em; color: #000000;">¡ASPIRA LIMPIO. VIVE VERDE!</h1>
+    </div>
+
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <img src="https://img.icons8.com/ios-filled/50/7e8287/email.png" alt="Email Icon"/>
+            <p>Email: <a href="mailto:kevinmonterrozadiaz@gmail.com">kevinmonterrozadiaz@gmail.com</a></p>
+        </div>
+        <div class="contact-info">
+            <img src="https://img.icons8.com/ios-filled/50/7e8287/phone.png" alt="Phone Icon"/>
+            <p>Teléfono: 3138135466</p>
+        </div>
+    </footer>
+</body>
+</html>
